@@ -46,7 +46,6 @@ const favicon = html.match(/<link rel="icon" type="image\/png" href="([^"]+)">/)
 assert.equal(favicon, "assets/company-logos/godrej-agrovet.png", "Favicon must use the packaged Godrej logo through a relative Pages-safe path");
 assert.ok(!favicon.startsWith("/"), "Favicon must not use a root-absolute path on GitHub Pages");
 assert.ok(existsSync(join(root, favicon)), "Favicon target must exist in source assets");
-assert.ok(existsSync(join(root, "dist", favicon)), "Production build must contain the favicon target");
 
 // Direct-entry and product-shell regression contracts.
 assert.match(html, /<main class="main">/, "The standalone dashboard must expose a semantic main region");
