@@ -1,0 +1,10 @@
+{
+  "name": "godrej-agrovet-oil-palm-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Standalone Godrej Agrovet Oil Palm portfolio demonstration for PalmWatch.",
+  "scripts": {
+    "test": "node tests/static-check.mjs",
+    "build": "node scripts/build.mjs"
+  }
+}
