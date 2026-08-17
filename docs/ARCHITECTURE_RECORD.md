@@ -16,7 +16,7 @@
 ## Current codebase map
 
 - `index.html` — standalone application shell, Godrej-only data and behavior, direct dashboard entry, branding, and accessibility semantics.
-- `assets/godrej-agrovet.png` — approved company logo used by the persistent brand area.
+- `assets/company-logos/godrej-agrovet.png` — approved company logo used by the persistent brand area.
 - `tests/` — static isolation/build assertions and browser coverage for responsive, keyboard, accessibility, and runtime behavior.
 - `scripts/build.mjs` — minimal static packager that creates the Pages-ready `dist/` output.
 - `.github/workflows/deploy-pages.yml` — CI test/build and GitHub Pages deployment workflow for `main`.
@@ -31,8 +31,9 @@ Independent verification passed for this increment:
 - Browser suite: `46/46` checks passed.
 - Axe accessibility scan: `0` violations.
 - Browser console errors, page errors, failed requests, and HTTP failures: `0` each.
+- Public GitHub Pages URL verified `200` with Godrej title, logo alternative text, PalmWatch branding, no company switcher, and no foreign-company strings: `https://vjk7989.github.io/Godrej-Agrovet-Oil-Palm-Portfolio/`.
 
 ## Pending and next safe task
 
-- Pending user visual review of the rendered Godrej page.
-- After approval: commit and push the validated tree to `vjk7989/Godrej-Agrovet-Oil-Palm-Portfolio`, enable/confirm GitHub Pages deployment, and verify the public repository-subpath URL.
+- No Godrej implementation work remains.
+- Next safe task: keep monitoring GitHub Pages if a green Actions history entry is required; the live public page is already verified.
